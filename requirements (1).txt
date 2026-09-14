@@ -1,0 +1,13 @@
+google-play-scraper
+pandas
+re
+Sastrawi
+scikit-learn
+matplotlib
+wordcloud
+collections.Counter
+transformers
+torch
+joblib
+flask
+flask-cors
