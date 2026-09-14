@@ -15,7 +15,7 @@ Alfagift merupakan aplikasi belanja online yang memiliki banyak ulasan pengguna 
 
 1. **Data Scraping** — mengambil 5.000 data ulasan aplikasi Alfagift dari Play Store menggunakan `google-play-scraper`.
 2. **Labeling** — memberi label sentimen (positif/negatif) secara manual berdasarkan kata kunci pada tiap ulasan.
-3. **Text Preprocessing** — membersihkan teks ulasan melalui proses **stopword removal** dan **stemming** untuk menyederhanakan variasi kata menjadi bentuk dasarnya.
+3. **Text Preprocessing** — membersihkan teks ulasan melalui proses **tokenisasi**, **stopword removal** dan **stemming** untuk menyederhanakan variasi kata menjadi bentuk dasarnya.
 4. **Feature Extraction** — mengekstraksi fitur teks menjadi representasi numerik menggunakan dua pendekatan: **Bag of Words (BoW)** dan **TF-IDF**.
 5. **Modeling & Classification** — melatih model klasifikasi sentimen menggunakan **Naive Bayes** dan **Support Vector Machine (SVM)**, kemudian menguji model untuk memprediksi sentimen dari ulasan baru yang belum pernah dilihat model.
 6. **Perbandingan dengan DistilBERT** — membandingkan performa model klasik (Naive Bayes, SVM) dengan model transformer **DistilBERT** untuk melihat sejauh mana pendekatan deep learning meningkatkan akurasi klasifikasi sentimen.
@@ -32,7 +32,7 @@ Alfagift merupakan aplikasi belanja online yang memiliki banyak ulasan pengguna 
 
 - Python
 - google-play-scraper (data scraping)
-- Sastrawi (stopword removal & stemming Bahasa Indonesia)
+- Sastrawi (tokenisasi, stopword removal & stemming Bahasa Indonesia)
 - scikit-learn (BoW, TF-IDF, Naive Bayes, SVM)
 - Hugging Face Transformers (DistilBERT)
 - Flask (deployment)
@@ -66,8 +66,6 @@ Alfagift merupakan aplikasi belanja online yang memiliki banyak ulasan pengguna 
 ├── requirements.txt
 └── README.md
 ```
-
-> Catatan: file `app.py` untuk deployment Flask belum tercantum di daftar file yang kamu bagikan — pastikan file ini turut disertakan saat upload ke GitHub, atau beri tahu saya nama file yang sebenarnya kalau berbeda.
 
 ## Cara Menjalankan
 
