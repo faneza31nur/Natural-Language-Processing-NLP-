@@ -74,7 +74,7 @@ pip install -r requirements.txt
 python app.py
 ```
 
-Buka `http://localhost:5000` di browser untuk mencoba prediksi sentimen dari ulasan baru.
+Buka `http://localhost/chatbot` di browser untuk mencoba prediksi sentimen dari ulasan baru.
 
 ---
 *Project ini dikerjakan sebagai bagian dari pembelajaran NLP dalam program pelatihan Data Analyst.*
